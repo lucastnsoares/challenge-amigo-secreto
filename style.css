@@ -2,11 +2,14 @@
     --color-primary: #4B69FD;
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
+    --color-button: #5cb823;
+    --color-button-hover: #3c8d16;
+    --color-button-trash: #f73333;
+    --color-button-trash-hover: #c03232;
     --color-text: #444444;
     --color-white: #FFFFFF;
 }
+
 
 /* Estilos gerais */
 * {
@@ -87,8 +90,14 @@ body {
     font-size: 16px;
 }
 
+.name-list {
+    width: 60%;
+    list-style: none;
+}
+
 .button-container {
-    width: 300px;
+    display: flex;
+    width: 600px;
     justify-content: center;
 }
 
@@ -134,15 +143,28 @@ ul {
     margin: 20px 0;
 }
 
+li {
+    background-color: #F2F2F2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
 .result-list {
     margin-top: 15px;
     color: #05DF05;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
+    height: auto;
 }
 
-/* Botão de sortear título */
+/* Botões */
 .button-draw {
     display: flex;
     align-items: center;
@@ -151,6 +173,7 @@ ul {
     color: var(--color-white);
     background-color: var(--color-button);
     font-size: 16px;
+    margin: 10px;
 }
 
 .button-draw img {
@@ -159,4 +182,24 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+.button-trash {
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button-trash);
+    font-size: 16px;
+    margin: 10px;
+}
+
+.button-trash:hover {
+    background-color: var(--color-button-trash-hover);
+}
+
+.button-trash-item {
+    cursor:pointer;
 }

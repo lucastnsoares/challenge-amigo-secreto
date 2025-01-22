@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Amigo Secreto</title>
 </head>
-
 <body>
     <main class="main-content">
         <header class="header-banner">
@@ -23,19 +22,24 @@
                 <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
                 <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
             </div>
-           
             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
             <ul id="resultado" class="result-list" aria-live="polite"></ul>
 
-            <div class="button-container">
+            <div id="botoes" class="button-container">
+                <!--
+                <button class="button-trash" onclick="sortearAmigo()" aria-label="Excluir todos os nomes">
+                    <img width=40px src="assets/trash.png" alt="Ícone para excluir todos os nomes">
+                    Excluir todos os nomes
+                </button>
                 <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
-                    <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
+                    <img width=40px src="assets/play_circle_outline.png" alt="Ícone para sortear">
                     Sortear amigo
                 </button>
+                -->
+                
             </div>
         </section>
     </main>
-
     <script src="app.js" defer></script>
 </body>
 </html>
